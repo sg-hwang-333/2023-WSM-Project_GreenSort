@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSort</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="top-container">
+            <div class="top">
+                <div class="welcome">WELCOME&nbsp;&nbsp;&nbsp;|</div>
+                <div class="signin">로그인</div>
+                <div class="signup">회원가입</div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="title">
+                <img src="./assets/Logo.ico" id="logo" alt="">
+                <a href="index.html" id="title-name">GreenSort</a>
+            </div>
+            <div class="nav-container">
+                <div class="item reason"><a href="">분리배출 이유</a></div>
+                <div class="item method"><a href="">분리배출 방법</a></div>
+                <div class="item experience"><a href="">분리배출 체험</a></div>
+                <div class="item calendar"><a href="">캘린더</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="slide-image" src="image/home_background_1.png">
+                <div class="text" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slide-image" src="image/home_background_1.png">
+                <div class="text" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)" style="background-color: var(--bs-white)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slide-image" src="image/home_background_1.png">
+                <div class="text" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)" style="background-color: var(--bs-white)"></span>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+    </main>
+
+
+</body>
+
+</html>
+
+<script src="js/slideshow.js"></script>
