@@ -1,0 +1,13 @@
+.reason-container {
+    margin-top: 20vh;
+    text-align: center;
+}
+.reason-title {
+    font-weight: var(--bs-font-bold);
+    font-size: var(--bs-font-36px);
+}
+.sub-reason-title {
+    font-weight: var(--bs-font-light);
+    font-size: var(--bs-font-16px);
+
+}

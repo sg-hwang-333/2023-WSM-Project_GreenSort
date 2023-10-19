@@ -11,7 +11,7 @@
     --bs-black-500: #5C5C5C;
     --bs-black-600: #4B4B4B;
     --bs-black-700: #434343;
-    --bs-black-800: ;
+    --bs-black-800: #212121;
     --bs-black: #000000;
     --bs-white: #ffffff;
     --bs-red: #DF4C4C;
@@ -29,8 +29,10 @@
     --bs-font-black: 900;
     /* font size */
     --bs-font-13px: 0.813rem;
+    --bs-font-16px: 0.93rem;
     --bs-font-18px: 1rem;
     --bs-font-20px: 1.1rem;
+    --bs-font-36px: 2rem;
     --bs-font-45px: 2.813rem;
     --bs-font-56px: 3.5rem;
 }
