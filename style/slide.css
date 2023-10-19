@@ -118,3 +118,18 @@
         opacity: 1
     }
 }
+@media screen and (max-width: 1024px) {
+    .text-container {
+        padding-left: 25vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title-text ,
+    .sub-title-text,
+    .title-button-div{
+        text-align: center;
+    }
+    .text-container {
+        padding: 0 0;
+    }
+}
