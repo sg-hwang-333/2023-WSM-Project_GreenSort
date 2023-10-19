@@ -1,5 +1,7 @@
 .reason-container {
     margin-top: 20vh;
+}
+.reason-title-container {
     text-align: center;
 }
 .reason-title {
@@ -9,5 +11,18 @@
 .sub-reason-title {
     font-weight: var(--bs-font-light);
     font-size: var(--bs-font-16px);
-
+}
+.reason {
+}
+.circle {
+    background-color: var(--bs-lightblue);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.reason-icon {
+    
 }
