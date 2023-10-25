@@ -42,7 +42,9 @@
     margin: 0px 0px;
     padding: 0px 0px;
     font-family: var(--bs-font);
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 ul {
     list-style: none;
@@ -54,4 +56,7 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+button:hover {
+    cursor: pointer;
 }

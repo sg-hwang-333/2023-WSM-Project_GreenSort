@@ -12,17 +12,35 @@
     font-weight: var(--bs-font-light);
     font-size: var(--bs-font-16px);
 }
-.reason {
+.reason-content-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 7vw;
+    margin: 10vh 2vw 0 2vw;
+    flex-wrap: wrap;
 }
 .circle {
     background-color: var(--bs-lightblue);
-    width: 200px;
-    height: 200px;
+    width: 188px;
+    height: 188px;
     border-radius: 100%;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 .reason-icon {
+}
+.reason-item {
+    font-size: var(--bs-font-20px);
+    font-weight: var(--bs-font-semibold);
+    color: var(--bs-mainColor);
+    margin-top: 18px;
+}
+.reason-item-sub {
+    font-size: var(--bs-font-16px);
+    font-weight: var(--bs-font-light);
+    color: var(--bs-black-400);
+    margin-top: 4vh;
     
 }
