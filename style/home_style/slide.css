@@ -1,6 +1,6 @@
-/* slide */
 .mySlides {
-    display: none
+    display: flex; /* Flex 컨테이너로 설정 */
+    align-items: center; /* 세로 중앙 정렬 */
 }
 
 .slide-image {
@@ -14,11 +14,14 @@
 .slideshow-container {
     position: relative;
 }
+
 .text-container {
     position: absolute;
-    bottom: 23%;
     width: 100%;
     padding-left: 15vw;
+    left: 0; /* 가로 가운데 정렬을 위해 left 속성 추가 */
+    top: 50%; /* 세로 가운데 정렬을 위해 top 속성 추가 */
+    transform: translate(0, -50%); /* 세로 가운데 정렬을 완료 */
 }
 .title-text {
     font-weight: var(--bs-font-black);

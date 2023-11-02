@@ -27,13 +27,14 @@
 .menu {
     display: flex;
     margin-bottom: 15px;
-    position: relative; /* 추가 */
+    position: relative;
 }
 
 .title {
     display: flex;
     align-items: center;
     margin-left: 9vw;
+    z-index: 2;
 }
 
 .nav-container {
@@ -41,9 +42,6 @@
     align-items: end;
 }
 
-#logo {
-    
-}
 
 #title-name {
     font-size: var(--bs-font-45px);
@@ -61,40 +59,144 @@
     margin-left: 3vw;
     margin-bottom: 15px;
 }
-#hamburger {
+
+/* hamburger */
+.nav-toggle {
     visibility: hidden;
-    width: 30px;
-    height: 29px;
-    position: absolute; /* 추가 */
-    top: 20px; /* 맨 위에 위치 */
-    right: 36px; /* 맨 오른쪽에 위치 */
+}
+
+#hamburger {
+    width: 35px;
+    height: 34px;
+    position: absolute;
+    /* 추가 */
+    top: 20px;
+    /* 맨 위에 위치 */
+    right: 36px;
+    /* 맨 오른쪽에 위치 */
+    cursor: pointer;
+}
+
+
+/* navbar */
+.navbar-container {
+    position: fixed;
+    /* 화면 상단에 고정 */
+    z-index: 1;
+    background-color: var(--bs-white);
+    width: 22em;
+    bottom: 0;
+    /* 화면 하단에 배치 */
+    top: 0;
+    /* 상단 위치 제거 */
+    padding-top: 80px;
+    visibility: hidden;
+    /* border-right: var(--bs-black-700) solid 1px; */
+}
+
+.navbar-sign {
+    display: inline-flex;
+    margin: 1.4rem 0;
+    padding-left: 4rem;
+}
+
+/* CSS */
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--bs-mainColor);
+    border-radius: 15px;
+    color: var(--bs-mainColor);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: var(--bs-font-medium);
+    line-height: normal;
+    min-height: 40px;
+    margin-right: 10px;
+    min-width: 0;
+    outline: none;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 6.5rem;
+    will-change: transform;
+}
+
+.button-28:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-mainColor);
+}
+
+.fromLeft {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.fromLeft:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px var(--bs-mainColor);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.fromLeft:hover:after {
+    transform: scaleX(1);
+}
+
+.fromLeft:after {
+    transform-origin: 0% 50%;
 }
 
 /* tablet */
 @media screen and (max-width: 1024px) {
     /* toggle 효과 추가하기 */
-    .top-container{
-        visibility: hidden;
-        position: absolute;
-        margin: 0px 0px;
-    }
-    .top, 
+
+    .top-container,
     .nav-container {
         visibility: hidden;
         position: absolute;
         float: left;
+        margin: 0px 0px;
         flex-direction: column;
     }
+
     .title {
         margin: 3px 0px -10px 12px;
     }
-    #hamburger {
+
+    .welcome {
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .nav-toggle {
         visibility: visible;
-        cursor : pointer;
-    } 
+    }
+
+    .top {
+        width: 22em;
+        padding: 0 4.8rem;
+        margin: 4vh 0 0 0;
+
+    }
+
+    .nav-item {
+        padding-top: 2rem;
+        margin-left: 1.4rem;
+    }
+
+    .show-navbar {
+        visibility: visible;
+    }
+
+    .hidden-navbar {
+        visibility: hidden;
+    }
 }
 
 /* mobile */
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}

@@ -29,8 +29,6 @@
     display: flex;
     align-items: center;
 }
-.reason-icon {
-}
 .reason-item {
     font-size: var(--bs-font-20px);
     font-weight: var(--bs-font-semibold);
