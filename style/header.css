@@ -69,11 +69,8 @@
     width: 35px;
     height: 34px;
     position: absolute;
-    /* 추가 */
     top: 20px;
-    /* 맨 위에 위치 */
     right: 36px;
-    /* 맨 오른쪽에 위치 */
     cursor: pointer;
 }
 
@@ -81,17 +78,13 @@
 /* navbar */
 .navbar-container {
     position: fixed;
-    /* 화면 상단에 고정 */
     z-index: 1;
     background-color: var(--bs-white);
     width: 22em;
     bottom: 0;
-    /* 화면 하단에 배치 */
     top: 0;
-    /* 상단 위치 제거 */
     padding-top: 80px;
     visibility: hidden;
-    /* border-right: var(--bs-black-700) solid 1px; */
 }
 
 .navbar-sign {
@@ -138,7 +131,7 @@
 .fromLeft:after {
     display: block;
     content: '';
-    border-bottom: solid 3px var(--bs-mainColor);
+    border-bottom: solid 2px var(--bs-mainColor);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -149,6 +142,18 @@
 
 .fromLeft:after {
     transform-origin: 0% 50%;
+}
+.fromFix {
+    display: inline-block;
+    text-transform: uppercase;
+    content: '';
+    border-bottom: solid 2px var(--bs-white);
+    color: var(--bs-mainColor);
+    font-weight: var(--bs-font-semibold);
+}
+
+.header-line {
+    margin: 0 5vw 0 5vw;
 }
 
 /* tablet */
@@ -196,7 +201,12 @@
     .hidden-navbar {
         visibility: hidden;
     }
+
+    .header-line {
+        margin: 0 0;
+    }
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {}
+
