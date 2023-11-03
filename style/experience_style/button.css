@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+.w-btn-neon2 {
+    margin-top: 9vh;
+    position: relative;
+    border: none;
+    min-width: 140px;
+    min-height: 50px;
+    background: var(--bs-mainColor);
+    border-radius: 1000px;
+    color: var(--bs-white);
+    cursor: pointer;
+    box-shadow: 12px 12px 24px #fff;
+    font-weight: var(--bs-font-medium);
+    font-size: var(--bs-font-18px);
+    transition: 0.3s;
+}
+
+.w-btn-neon2:hover {
+    transform: scale(1.2);
+}
+
+.w-btn-neon2:hover::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid var(--bs-mainColor);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
