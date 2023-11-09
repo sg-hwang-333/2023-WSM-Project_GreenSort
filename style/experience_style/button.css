@@ -46,3 +46,13 @@
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
 }
+@media screen and (max-width: 992px) {
+    .w-btn-neon2 {
+        margin-top: 7vw
+    }
+}
+@media screen and (max-width: 600px) {
+    .w-btn-neon2 {
+        margin-top: 9vw
+    }
+}

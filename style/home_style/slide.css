@@ -127,11 +127,17 @@
         padding-left: 25vw;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .title-text ,
     .sub-title-text,
     .title-button-div{
         text-align: center;
+    }
+    .title-text {
+        font-size: 9vw;
+    }
+    .sub-title-text {
+        font-size: 3vw;
     }
     .text-container {
         padding: 0 0;

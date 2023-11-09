@@ -1,0 +1,40 @@
+.weekday.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 1.25rem;
+    text-align: center;
+    text-align: center;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10vw;
+    width: 40%;
+}
+.dates.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+.date.Witem {
+    padding: 10px;
+    aspect-ratio: 1/1;     /* 1:1 비율 */
+    display: grid;         /* 글자 수평 수직 가운데로 */
+    place-items: center;   /* 글자 수평 수직 가운데로 */
+}
+/* 오늘 포커싱 */
+.review.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: deepskyblue;
+    row-gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.left:hover,
+.right:hover,
+.month:hover {
+    cursor: pointer;
+}
