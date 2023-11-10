@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenSort - Sign in</title>
+    <!-- css -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/signIn/signIn.css">
-    <!-- css -->
 </head>
 <body>
      <main>
         <div class="login-container">
-            <div class="title">로그인</div>
-            <input type="text" value="이메일을 입력해주세요">
-            <input type="text" value="비밀번호를 입력해 주세요">
-            <input type="checkbox">로그인 유지하기
+            <div class="title-container">
+                <img src="../image/icons/before.png" class="before-btn" onclick="location.href='../index.html'">
+                <div class="title">로그인</div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="em" class="input-text" placeholder="이메일을 입력해 주세요">
+                <input type="password" id="pw" class="input-text" placeholder="비밀번호를 입력해 주세요">                
+            </div>
+            <div class="ch-email">
+                <div class="ch-email-sub">
+                    <input type="checkbox" class="ch-login"><div class="ch-login-text">로그인 유지하기</div>
+                </div>
+            </div>
             
-            <button>로그인</button>
-            <div class="find-pw"><a href="#">패스워드 찾기</a></div>
+            <button class="login-btn">로그인</button>
+            <div class="find-pw"><a href="#">비밀번호 찾기</a></div>
+            <div class="not-member-container">아직 회원이 아니신가요? <a href="./signUp.html" class="gotoSignUp">회원가입</a></div>
         </div>
         <div class="text-container">
-            <div><a href="../index.html"><img src="../image/icons/Logo_big.png"width="150px" height="150px"></a></div>
-            <a href="../index.html" class="gs-title" >GreenSort</a>
+            <div class="text-sub-container">
+                <div><a href="../index.html"><img src="../image/icons/Logo_big_deColor.png"width="150px" height="150px"></a></div>
+                <a href="../index.html" class="gs-title" >GreenSort</a>
+            </div>
         </div>
      </main>
     

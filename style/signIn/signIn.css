@@ -1,21 +1,160 @@
 body {
-    background-color: var(--bs-black-100);
+    background-color: var(--bs-black-800);
 }
 main {
-    top: 50%;
+    margin-top: calc(50vh - 300px);
     display: flex;
     justify-content: center;
 }
 .login-container {
-    background-color: var(--bs-mainColor);
-}
-.text-container {
     background-color: var(--bs-white);
+    border: 1px solid var(--bs-black-100);
     text-align: center;
-    width: calc(30vw + 180px);
+}
+.title-container {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 28px;
+}
+.title {
+    font-weight: var(--bs-font-black);
+    font-size: var(--bs-font-36px);
+}
+
+.input-text {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: var(--bs-font-regular);
+    border: 1.5px solid var(--bs-black-300);
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: var(--bs-white);
+    margin-top: 12px;
+}
+#em, 
+#pw {
+    padding: 25px 12px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: calc(1vw + 5px) center; 
+    padding-left: calc(35px + 1vw);
+}
+#em {
+    background-image: url('../../image/icons/sign_icon/ic_round-mail.png');
+}
+#pw {
+    background-image: url('../../image/icons/sign_icon/gridicons_lock.png');
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+}
+
+.ch-email {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.ch-email-sub {
+    display: flex;
+    width: 80%;
+    text-align: left;
+}
+.ch-login {
+    accent-color: var(--bs-black-400);
+    width: 30px;
+    margin-right: 5px;
+}
+.ch-login:hover {
+    cursor: pointer;
+}
+.ch-login-text {
+    font-weight: var(--bs-font-regular);
+    font-size: 14px;
+}
+.login-btn {
+    margin-top: 40px;
+    width: 80%;
+    height: 52px;
+    background-color: var(--bs-mainColor);
+    border: 0px;
+    border-radius: 10px;
+    color: var(--bs-white);
+    font-size: var(--bs-font-18px);
+}
+.find-pw {
+    margin-top: 24px;
+    color: var(--bs-black-300);
+    font-size: var(--bs-font-16px);
+}
+.not-member-container {
+    margin-top: 100px;
+    color: var(--bs-black-300);
+    font-size: var(--bs-font-13px);
+}
+.gotoSignUp {
+    color: var(--bs-mainColor);
+}
+
+.title {
+    display: inline-block;
+}
+.before-btn {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+}
+
+/* txt */
+.text-container {
+    background-color: var(--bs-mainColor);
+    text-align: center;
+}
+.text-sub-container {
+    transform: translate(0%, 80%);
+    text-align: center;
+}
+.text-container, 
+.login-container {
+    width: 40vw;
+    max-width: 600px;
+    height: 600px;
 }
 .gs-title {
     font-size: var(--bs-font-45px);
     font-weight: var(--bs-font-black);
-    color: var(--bs-mainColor);
+    color: var(--bs-white);
+}
+@media screen and (max-width: 1200px) {
+    .text-container {
+        width: 25%;
+    }
+    .gs-title {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 850px) {
+    .login-container {
+        max-width: none;
+        width: 80%;
+    }
+    .text-container {
+        width: 0;
+        visibility: hidden;
+    }
+    .before-btn {
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        visibility: visible;
+        top: 25%;
+        left: 10%;
+    }
+    .before-btn:hover {
+        cursor: pointer;
+    }
 }
