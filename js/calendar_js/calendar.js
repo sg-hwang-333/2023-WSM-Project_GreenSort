@@ -9,7 +9,7 @@ let month = now.getMonth() + 1;
 let date = now.getDate();
 
 
-const datesContainerDiv = document.querySelectorAll(".dates.container")[0];
+const datesContainerDiv = document.querySelectorAll(".dates.date-container")[0];
 const monthDiv = document.getElementsByClassName('month')[0];
 const yearDiv = document.getElementsByClassName('year')[0];
 

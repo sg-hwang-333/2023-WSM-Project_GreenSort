@@ -10,7 +10,7 @@
     margin-left: 10vw;
     width: 40%;
 }
-.dates.container {
+.dates.date-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     font-size: 1rem;

@@ -1,0 +1,21 @@
+body {
+    background-color: var(--bs-black-100);
+}
+main {
+    top: 50%;
+    display: flex;
+    justify-content: center;
+}
+.login-container {
+    background-color: var(--bs-mainColor);
+}
+.text-container {
+    background-color: var(--bs-white);
+    text-align: center;
+    width: calc(30vw + 180px);
+}
+.gs-title {
+    font-size: var(--bs-font-45px);
+    font-weight: var(--bs-font-black);
+    color: var(--bs-mainColor);
+}
