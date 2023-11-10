@@ -11,7 +11,7 @@
     margin-top: 10px;
     margin-right: 5vw;
     font-weight: var(--bs-font-regular);
-    font-size: var(--bs-font-13px);
+    font-size: var(--bs-font-10px);
 }
 
 .welcome {
@@ -54,7 +54,7 @@
 .item {
     width: auto;
     color: #000000;
-    font-size: var(--bs-font-18px);
+    font-size: var(--bs-font-16px);
     font-weight: var(--bs-font-medium);
     margin-left: 3vw;
     margin-bottom: 15px;
@@ -174,7 +174,7 @@ main {
     .title {
         position: fixed;
         background-color: var(--bs-white);
-        padding: 3px 0 0 2vw;
+        padding: 7px 0 0 2vw;
     }
     #title-name {
         margin-left: 15px;
@@ -186,6 +186,7 @@ main {
     .welcome {
         margin: 0 0;
         padding: 0 0;
+        font-size: var(--bs-font-13px);
     }
 
     .nav-toggle {
@@ -201,7 +202,7 @@ main {
 
     .top {
         width: 22em;
-        padding: 0 4.8rem;
+        padding: 0 2.2rem;
         margin: 4vh 0 0 0;
 
     }
@@ -240,6 +241,9 @@ main {
         text-transform: none;
     }
     
+    .welcome {
+        font-size: var(--bs-font-16px);
+    }
     .fromLeft:after {
         border-bottom: none;
         transform: none;

@@ -29,12 +29,13 @@
     --bs-font-extrabold: 800;
     --bs-font-black: 900;
     /* font size */
+    --bs-font-10px: 0.693rem;
     --bs-font-13px: 0.813rem;
     --bs-font-16px: 0.93rem;
     --bs-font-18px: 1rem;
     --bs-font-20px: 1.1rem;
     --bs-font-36px: 2rem;
-    --bs-font-45px: 2.813rem;
+    --bs-font-45px: 2.513rem;
     --bs-font-56px: 3.5rem;
 }
 
