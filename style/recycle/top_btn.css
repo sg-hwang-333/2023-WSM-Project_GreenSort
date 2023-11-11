@@ -1,8 +1,8 @@
 .gotoTop {
-    margin: 14vh 0 90px 0;
+    margin: 20vh 0 90px 0;
     display: flex;
     justify-content: center;
-    align-items: center; /* 세로 중앙 정렬을 추가합니다. */
+    align-items: center;
 }
 
 .gotoTop-a {

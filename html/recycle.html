@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../style/recycle/show_move.css">
     <link rel="stylesheet" href="../style/recycle/srcoll_btn.css">
     <link rel="stylesheet" href="../style/recycle/top_btn.css">
+    <link rel="stylesheet" href="../style/recycle/popup.css">
     <!-- AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -106,19 +107,13 @@
             <div data-aos="fade" data-aos-once="false">
                 <div class="trash-origin origin">
                     <img src="../image/recycle/organic/trash-origin.PNG" alt="">
-                    <div class="scroll-text">음식물 쓰레기</div>
+                    <div class="scroll-text"><a href="#pop_info_1" class="btn_open">음식물 쓰레기</a></div>
                 </div>
             </div>
-            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
                 <div class="trash-can">
                     <img src="../image/recycle/organic/trash-can.PNG" class="scroll-img" alt="">
-                    <div class="scroll-text">분리배출</div>
-                </div>
-            </div>
-            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
-                <div class="trash-can">
-                    <img src="../image/recycle/organic/trash-can.PNG" class="scroll-img" alt="">
-                    <div class="scroll-text">분리배출</div>
+                    <div class="scroll-text"><a href="#pop_info_2" class="btn_open">분리배출</a></div>
                 </div>
             </div>
             
@@ -151,11 +146,42 @@
                     src="../image/icons/github.png"></a></p>
     </footer>
 
+    <!-- popup -->
+    <div id="pop_info_1" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            일반쓰레기로 분류하는<br>음식물류 폐기물<br><br>
+            쉽게 분해되지 않는 것<br>
+            (딱딱한 껍데기, 씨앗, 뼈, 패각류 등)<br>
+            영양소가 없는 것<br>
+            (건조한 껍질과 줄기, 알껍질 등)<br>
+            동물에게 유해한 것<br>
+            (캡사이신, 나트륨, 독성물질 등) </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_2" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            배출 전 해야 할 일<br><br>
+            1. 수분 제거<br>
+            2. 양념 제거<br>
+            3. 이물질 제거<br>
+            4. 잘게 자르기<br>
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
+
+
 <script>
-    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    AOS.init();
 </script>
 <script src="../js/nav.js"></script>
 <script src="../js/recycle_js/scroll_btn.js"></script>
+<script src="../js/recycle_js/popup.js"></script>

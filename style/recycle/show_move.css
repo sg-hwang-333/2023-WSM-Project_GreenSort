@@ -12,6 +12,7 @@
     visibility: visible;
 }
 .scroll-text {
+    display: block;
     margin-top: 12px;
     font-size: 20px;
     font-weight: var(--bs-font-medium);

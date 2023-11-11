@@ -48,7 +48,7 @@
     transition: all 300ms ease;
     font-size: 1.2em;
     user-select: none;
-    color: var(--bs-mainColor);
+    color: var(--bs-black-200);
 }
 
 .middle .box span:before {
