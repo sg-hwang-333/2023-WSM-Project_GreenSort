@@ -10,19 +10,20 @@ main {
 
 /*요일*/
 .fc-col-header-cell-cushion {
-    color: #000;
+    color:  var(--bs-black);
 }
 
 .fc-col-header-cell-cushion:hover {
     text-decoration: none;
-    color: #000;
+    color:  var(--bs-black);
 }
 
 /*일자*/
 .fc-daygrid-day-number {
-    color: #000;
+    color:  var(--bs-black);
     font-size: 1em;
 }
+
 /*종일제목*/
 .fc-event-title.fc-sticky {
     background-color: var(--bs-mainColor);
@@ -47,20 +48,22 @@ main {
 
 /*가로 줄 - 월달력 종일 or 복수일자*/
 .fc-h-event {
-    background-color: #000;
+    background-color: var(--bs-black);
 }
 
 /*세로 줄 - 주달력, 일달력*/
 .fc-v-event {
-    background-color: #000;
+    background-color: var(--bs-black);
 }
 
 /*title 옆에 점*/
-.fc-daygrid-event-dot {
-}
+/* .fc-daygrid-event-dot {
+} */
+
 .fc-button-group {
     background-color: var(--bs-black-100);
 }
+
 /*month/week/day*/
 .fc-button-active {
     border-color: var(--bs-mainColor) !important;
@@ -68,21 +71,24 @@ main {
     color: var(--bs-white) !important;
     font-weight: bold !important;
 }
+
 div.fc-event-main-frame {
     background-color: var(--bs-mainColor);
     border: none;
 }
+
 /* 일요일 날짜 빨간색 */
 .fc-day-sun a {
     color: var(--bs-red);
     text-decoration: none;
-  }
-  
-  /* 토요일 날짜 파란색 */
-  .fc-day-sat a {
+}
+
+/* 토요일 날짜 파란색 */
+.fc-day-sat a {
     color: var(--bs-blue);
     text-decoration: none;
-  }
+}
+
 @media screen and (max-width: 1024px) {
     .calendar-container-main {
         width: 90%;
