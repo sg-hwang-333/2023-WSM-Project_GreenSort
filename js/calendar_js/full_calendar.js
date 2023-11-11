@@ -5,13 +5,13 @@
             calendarEl, {
             height: '700px', // calendar 높이 설정        
             expandRows: true, // 화면에 맞게 높이 재설정        
-            slotMinTime: '08:00', // Day 캘린더에서 시작 시간        
+            slotMinTime: '06:00', // Day 캘린더에서 시작 시간        
             slotMaxTime: '20:00', // Day 캘린더에서 종료 시간        
             // 해더에 표시할 툴바        
             headerToolbar: {
-                left: 'prev,next today',
+                left: 'prev,today,next',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
             initialView: 'dayGridMonth',
             navLinks: true, // 날짜를 선택하면 Day 캘린더나 Week 캘린더로 링크   
@@ -34,7 +34,7 @@
             },
             select: function (arg) {
                 // 캘린더에서 드래그로 이벤트를 생성할 수 있다.          
-                var title = prompt('Event Title:');
+                var title = prompt('일정을 입력하세요');
                 if (title) {
                     calendar.addEvent({
                         title: title,

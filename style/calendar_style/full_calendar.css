@@ -1,0 +1,97 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-container-main {
+    margin: 60px 0 40px 0;
+    width: 80%;
+}
+
+/*요일*/
+.fc-col-header-cell-cushion {
+    color: #000;
+}
+
+.fc-col-header-cell-cushion:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*일자*/
+.fc-daygrid-day-number {
+    color: #000;
+    font-size: 1em;
+}
+/*종일제목*/
+.fc-event-title.fc-sticky {
+    background-color: var(--bs-mainColor);
+    border: none;
+}
+
+/*more버튼*/
+.fc-daygrid-more-link.fc-more-link {
+    color: var(--bs-black-100);
+}
+
+/*일정시간*/
+.fc-daygrid-event>.fc-event-time {
+    color: var(--bs-black-700);
+}
+
+/*시간제목*/
+.fc-daygrid-dot-event>.fc-event-title {
+    color: var(--bs-mainColor) !important;
+    background-color: transparent !important;
+}
+
+/*가로 줄 - 월달력 종일 or 복수일자*/
+.fc-h-event {
+    background-color: #000;
+}
+
+/*세로 줄 - 주달력, 일달력*/
+.fc-v-event {
+    background-color: #000;
+}
+
+/*title 옆에 점*/
+.fc-daygrid-event-dot {
+}
+.fc-button-group {
+    background-color: var(--bs-black-100);
+}
+/*month/week/day*/
+.fc-button-active {
+    border-color: var(--bs-mainColor) !important;
+    background-color: var(--bs-mainColor) !important;
+    color: var(--bs-white) !important;
+    font-weight: bold !important;
+}
+div.fc-event-main-frame {
+    background-color: var(--bs-mainColor);
+    border: none;
+}
+/* 일요일 날짜 빨간색 */
+.fc-day-sun a {
+    color: var(--bs-red);
+    text-decoration: none;
+  }
+  
+  /* 토요일 날짜 파란색 */
+  .fc-day-sat a {
+    color: var(--bs-blue);
+    text-decoration: none;
+  }
+@media screen and (max-width: 1024px) {
+    .calendar-container-main {
+        width: 90%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 792px) {
+    .calendar-container-main {
+        width: 100%;
+    }
+}

@@ -66,10 +66,10 @@
 }
 
 #hamburger {
-    width: 35px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 20px;
+    top: 21px;
     right: 36px;
     cursor: pointer;
     z-index: 2;
