@@ -1,0 +1,18 @@
+.show-move-container {
+    text-align: center;
+    margin-top: 40px;
+}
+.scroll-img {
+    margin-top: 14vw;
+}
+.hide {
+    visibility: hidden;
+}
+.show {
+    visibility: visible;
+}
+.scroll-text {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: var(--bs-font-medium);
+}

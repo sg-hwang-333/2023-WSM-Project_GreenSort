@@ -56,7 +56,5 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-    .start-container {
-        top: 60vw;
-    }
+    
 }

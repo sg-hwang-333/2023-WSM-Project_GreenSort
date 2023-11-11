@@ -1,0 +1,95 @@
+.middle {
+    width: 100%;
+    text-align: center;
+    margin-top: calc(60px + 2vw);
+}
+.middle input[type=radio] {
+    display: none;
+}
+
+.middle input[type=radio]:checked+.box {
+    background-color: var(--bs-mainColor);
+}
+
+.middle input[type=radio]:checked+.box span {
+    color: var(--bs-white);
+    transform: translateY(20px);
+    font-weight: var(--bs-font-semibold);
+}
+
+.middle input[type=radio]:checked+.box span:before {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.middle .box {
+    width: calc(100px + 3vw);
+    height: 100px;
+    background-color: var(--bs-white);
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5vw;
+    font-weight: var(--bs-font-medium);
+}
+
+.middle .box:active {
+    transform: translateY(0px);
+}
+
+.middle .box span {
+    position: absolute;
+    transform: translate(-10, 0);
+    left: 0;
+    right: 0;
+    transition: all 300ms ease;
+    font-size: 1.2em;
+    user-select: none;
+    color: var(--bs-mainColor);
+}
+
+.middle .box span:before {
+    display: block;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    color: var(--bs-white);
+}
+
+.middle .organic span:before {
+    content: url('../../image/icons/radio_icon/ic_organic.png');
+}
+
+.middle .paper span:before {
+    content: url('../../image/icons/radio_icon/ic-paper.png');
+}
+.middle .glass span:before {
+    content: url('../../image/icons/radio_icon/ic-glass.png');
+}
+.middle .plastic span:before {
+    content: url('../../image/icons/radio_icon/ic-plastic.png');
+}
+.middle .metal span:before {
+    content: url('../../image/icons/radio_icon/ic-metal.png');
+}
+
+@media screen and (max-width: 1024px) {
+    .middle .box {
+        width: calc(100px);
+        margin-left: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    .middle {
+        margin-top: 30px;
+    }
+    .middle .box {
+        margin: 0 0;
+        width: 90px;
+    }
+
+}

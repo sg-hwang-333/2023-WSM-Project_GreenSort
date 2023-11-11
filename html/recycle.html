@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,17 @@
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/recycle/radio.css">
+    <link rel="stylesheet" href="../style/recycle/show_move.css">
+    <link rel="stylesheet" href="../style/recycle/srcoll_btn.css">
+    <link rel="stylesheet" href="../style/recycle/top_btn.css">
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
+    <a href="" name="top"></a>
     <!-- navbar -->
     <div class="navbar-container">
         <div class="top">
@@ -54,9 +64,80 @@
             <img src="../image/icons/list.png" id="hamburger" alt="">
         </div>
     </header>
-
     <main>
+        <div class="radio-group">
+            <div class="middle">
+                <label>
+                    <input type="radio" name="radio" checked />
+                    <div class="organic box">
+                        <span>음식물</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="radio" />
+                    <div class="paper box">
+                        <span>종이류</span>
+                    </div>
+                </label>
+
+                <label>
+                    <input type="radio" name="radio" />
+                    <div class="glass box">
+                        <span>유리</span>
+                    </div>
+                </label>
+
+                <label>
+                    <input type="radio" name="radio" />
+                    <div class="plastic box">
+                        <span>플라스틱</span>
+                    </div>
+                </label>
+
+                <label>
+                    <input type="radio" name="radio" />
+                    <div class="metal box">
+                        <span>캔류</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="show-move-container">
+            <div data-aos="fade" data-aos-once="false">
+                <div class="trash-origin origin">
+                    <img src="../image/recycle/organic/trash-origin.PNG" alt="">
+                    <div class="scroll-text">음식물 쓰레기</div>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
+                <div class="trash-can">
+                    <img src="../image/recycle/organic/trash-can.PNG" class="scroll-img" alt="">
+                    <div class="scroll-text">분리배출</div>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
+                <div class="trash-can">
+                    <img src="../image/recycle/organic/trash-can.PNG" class="scroll-img" alt="">
+                    <div class="scroll-text">분리배출</div>
+                </div>
+            </div>
+            
+
+            
         
+            <div class="scroll-btn">
+                <div class="s1_arrow">
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+
+            <div class="gotoTop hide">
+                <a href="#top" class="gotoTop-a">Top</a>
+            </div>
+        </div>
+
+
     </main>
 
 
@@ -66,10 +147,15 @@
     <footer>
         <img class="grayscale-logo" src="../image/icons/Logo.ico">
         <p class="footer-left">&copy; 2023 Copyright, GreenSort</p>
-        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img src="../image/icons/github.png"></a></p>
+        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img
+                    src="../image/icons/github.png"></a></p>
     </footer>
 
 </body>
 
 </html>
+<script>
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+</script>
 <script src="../js/nav.js"></script>
+<script src="../js/recycle_js/scroll_btn.js"></script>

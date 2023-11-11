@@ -19,6 +19,7 @@ main {
 .title {
     font-weight: var(--bs-font-black);
     font-size: var(--bs-font-36px);
+    display: inline-block;
 }
 
 .input-text {
@@ -100,9 +101,6 @@ main {
     color: var(--bs-mainColor);
 }
 
-.title {
-    display: inline-block;
-}
 .before-btn {
     position: absolute;
     visibility: hidden;
@@ -133,8 +131,13 @@ main {
     .text-container {
         width: 25%;
     }
+    .text-sub-container {
+        transform: translate(0%, 100%);
+    }
     .gs-title {
         visibility: hidden;
+        height: 0;
+        width: 0;
     }
 }
 @media screen and (max-width: 850px) {

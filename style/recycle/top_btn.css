@@ -1,0 +1,22 @@
+.gotoTop {
+    margin: 14vh 0 90px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 중앙 정렬을 추가합니다. */
+}
+
+.gotoTop-a {
+    display: inline-block;
+    color: var(--bs-mainColor);
+    font-size: var(--bs-font-20px);
+    font-weight: var(--bs-font-bold);
+    padding: 40px;
+    border: 1.5px solid var(--bs-mainColor);
+    border-radius: 100px;
+}
+
+
+.gotoTop-a:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-mainColor);
+}

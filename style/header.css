@@ -69,7 +69,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 21px;
+    top: 20px;
     right: 36px;
     cursor: pointer;
     z-index: 2;
@@ -181,7 +181,7 @@ main {
         margin-right: 0;
     }
     main {
-        margin-top: 71px;
+        margin-top: 72px;
     }
     .welcome {
         margin: 0 0;
