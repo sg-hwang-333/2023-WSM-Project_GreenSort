@@ -110,16 +110,86 @@
                     <div class="scroll-text"><a href="#pop_info_1" class="btn_open">음식물 쓰레기</a></div>
                 </div>
             </div>
-            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false"> <!-- 오른쪽으로 줌아웃 하는 모션 설정 -->
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+            </div>
+            
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
                 <div class="trash-can">
                     <img src="../image/recycle/organic/trash-can.PNG" class="scroll-img" alt="">
                     <div class="scroll-text"><a href="#pop_info_2" class="btn_open">분리배출</a></div>
                 </div>
             </div>
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                <img src="../image/recycle/arrow-2-pc.png" class="arrow-img-2" alt="">
+            </div>
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                <div class="select-btn-group scroll-img">
+                    <button class="select-btn feed button-81" role="button" onclick="toggleContainers('feed')">사료화</button>
+                    <button class="select-btn fertilizer button-81" role="button" onclick="toggleContainers('fertilizer')">비료화</button>
+                </div>
+            </div>
             
+            <!-- select 이후 -->
+            <div class="feed-container hide">
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_3_1" class="btn_open">살균·건조 처리</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_3_2" class="btn_open">발효</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_3_3" class="btn_open">배합</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/organic/feed.jpg" class="scroll-img img-resize none-margin" alt="">
+                    <div class="scroll-text text-space"><a href="#pop_info_3_4" class="btn_open">사료</a></div>
+                </div>
+            </div>
 
-            
+            <div class="fertilizer-container hide">
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_4_1" class="btn_open">석회 안정화</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_4_2" class="btn_open">발효</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <div class="scroll-text text-space"><a href="#pop_info_4_3" class="btn_open">건조</a></div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/arrow.png" class="arrow-img" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
+                    <img src="../image/recycle/organic/fertilizer.jpg" class="scroll-img img-resize none-margin" alt="">
+                    <div class="scroll-text text-space"><a href="#pop_info_4_4" class="btn_open">비료</a></div>
+                </div>
+            </div>
         
+
+
+
             <div class="scroll-btn">
                 <div class="s1_arrow">
                     <div class="scroll-arrow"></div>
@@ -142,8 +212,7 @@
     <footer>
         <img class="grayscale-logo" src="../image/icons/Logo.ico">
         <p class="footer-left">&copy; 2023 Copyright, GreenSort</p>
-        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img
-                    src="../image/icons/github.png"></a></p>
+        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img src="../image/icons/github.png"></a></p>
     </footer>
 
     <!-- popup -->
@@ -172,7 +241,82 @@
           <button type="button" class="btn_close">닫기</button>
         </div>
     </div>
+    <div id="pop_info_3_1" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            병원성 미생물을 박멸한 후<br>
+            수분을 제거함으로서<br>
+            유통기한을 연장하는 과정<br>
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_3_2" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            유용한 미생물을 활성화시키며,<br>
+            동물이 쉽게 소화하고<br>
+            흡수할 수 있는 형태로 만드는 과정
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_3_3" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            사료의 영양소 균형을<br>
+            맞추는 과정
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_3_4" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            돼지, 닭, 벌레 등의 먹이가 된다
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
 
+    <div id="pop_info_4_1" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            음식물 쓰레기의 산성을 중화시키고<br>
+            부피를 줄이거나<br>
+            악취를 제거하는 과정
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_4_2" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            유용한 미생물을 활성화시키며,<br>
+            동물이 쉽게 소화하고<br>
+            흡수할 수 있는 형태로 만드는 과정
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_4_3" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            수분 제어, 부패 방지,<br>
+            효율적인 저장 및 운반을 위한 과정
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
+    <div id="pop_info_4_4" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+          <p class="dsc">
+            토지의 생산력을 높여서<br>
+            식물이 잘 자라나도록 한다
+          </p>
+          <button type="button" class="btn_close">닫기</button>
+        </div>
+    </div>
 
 </body>
 
@@ -185,3 +329,4 @@
 <script src="../js/nav.js"></script>
 <script src="../js/recycle_js/scroll_btn.js"></script>
 <script src="../js/recycle_js/popup.js"></script>
+<script src="../js/recycle_js/select_btn.js"></script>
