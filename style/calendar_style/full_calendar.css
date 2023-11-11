@@ -10,12 +10,11 @@ main {
 
 /*요일*/
 .fc-col-header-cell-cushion {
-    color:  var(--bs-black);
+    color: var(--bs-black);
 }
-
 .fc-col-header-cell-cushion:hover {
     text-decoration: none;
-    color:  var(--bs-black);
+    color: var(--bs-black);
 }
 
 /*일자*/
@@ -69,7 +68,7 @@ main {
     border-color: var(--bs-mainColor) !important;
     background-color: var(--bs-mainColor) !important;
     color: var(--bs-white) !important;
-    font-weight: bold !important;
+    font-weight: var(--bs-font-light) !important;
 }
 
 div.fc-event-main-frame {
@@ -88,6 +87,12 @@ div.fc-event-main-frame {
     color: var(--bs-blue);
     text-decoration: none;
 }
+
+.fc-button {
+    background-color: var(--bs-mainColor);
+    color: var(--bs-white);
+}
+
 
 @media screen and (max-width: 1024px) {
     .calendar-container-main {

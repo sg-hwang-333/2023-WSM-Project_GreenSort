@@ -1,6 +1,6 @@
 .mySlides {
-    display: flex; /* Flex 컨테이너로 설정 */
-    align-items: center; /* 세로 중앙 정렬 */
+    display: flex;
+    align-items: center; 
 }
 
 .slide-image {
@@ -19,9 +19,9 @@
     position: absolute;
     width: 100%;
     padding-left: 15vw;
-    left: 0; /* 가로 가운데 정렬을 위해 left 속성 추가 */
-    top: 50%; /* 세로 가운데 정렬을 위해 top 속성 추가 */
-    transform: translate(0, -50%); /* 세로 가운데 정렬을 완료 */
+    left: 0; 
+    top: 50%; 
+    transform: translate(0, -50%); 
 }
 .title-text {
     font-weight: var(--bs-font-black);
@@ -41,7 +41,7 @@
     color: var(--bs-black);
     font-weight: var(--bs-font-medium);
     font-size: vaR(--bs-font-18px);
-    border: 0px solid white;
+    border: 0px solid var(--bs-white);
     border-radius: 40px;
     margin-top: 30px;
     padding: 10px 25px;
@@ -54,7 +54,7 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: var(--bs-white);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
