@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,14 @@
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/calendar_style/calendar.css">
-
+    <!-- jquery CDN -->  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+    <!-- fullcalendar CDN -->  
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' rel='stylesheet' /> 
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>  
+    <!-- fullcalendar 언어 CDN -->  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
 </head>
-    
+
 <body>
     <!-- navbar -->
     <div class="navbar-container">
@@ -21,8 +27,10 @@
             <div class="welcome">WELCOME</div>
         </div>
         <div class="navbar-sign">
-            <div class="signin"><button class="button-28" role="button" onclick="location.href='./signIn.html'">로그인</button></div>
-            <div class="signup"><button class="button-28" role="button" onclick="location.href='./signUp.html'">회원가입</button></div>
+            <div class="signin"><button class="button-28" role="button"
+                    onclick="location.href='./signIn.html'">로그인</button></div>
+            <div class="signup"><button class="button-28" role="button"
+                    onclick="location.href='./signUp.html'">회원가입</button></div>
         </div>
         <div class="nav-item">
             <div class="item method"><a href="./recycle.html" class="nav-link fromLeft">재활용 과정</a></div>
@@ -51,7 +59,7 @@
                 <div class="item calendar fromFix"><a href="./calendar.html" class="nav-link">캘린더</a></div>
             </div>
         </div>
-        
+
         <div class="nav-toggle" id="nav-toggle">
             <img src="../image/icons/list.png" id="hamburger" alt="">
         </div>
@@ -69,15 +77,19 @@
             <div class="calendar flex-container">
                 <!-- weekday 일 월 화 ... 토 -->
                 <div class="weekday container">
-                    <div class="weekday Witem">일</div>
+                    <div class="weekday Witem" style="color: var(--bs-red)">일</div>
                     <div class="weekday Witem">월</div>
                     <div class="weekday Witem">화</div>
                     <div class="weekday Witem">수</div>
                     <div class="weekday Witem">목</div>
                     <div class="weekday Witem">금</div>
-                    <div class="weekday Witem">토</div>
+                    <div class="weekday Witem" style="color: var(--bs-blue)">토</div>
                 </div>
                 <div class="dates date-container">
+                    <!-- calendar 태그 -->
+                    <div id='calendar-container'>
+                        <div id='calendar'></div>
+                    </div>
                 </div>
             </div>
 
@@ -90,11 +102,14 @@
     <footer>
         <img class="grayscale-logo" src="../image/icons/Logo.ico">
         <p class="footer-left">&copy; 2023 Copyright, GreenSort</p>
-        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img src="../image/icons/github.png"></a></p>
+        <p class="footer-right"><a href="https://github.com/sg-hwang-333" target="_blank"><img
+                    src="../image/icons/github.png"></a></p>
     </footer>
 </body>
+
 </html>
 <script src="../js/nav.js"></script>
+<script src="../js/calendar_js/full_calendar.js"></script>
 <!-- <script src="../js/checkLoginStatus.js"></script>
 <script>checkLoginStatus();</script> -->
-<script src="../js/calendar_js/calendar.js"></script>
+<!-- <script src="../js/calendar_js/calendar.js"></script> -->

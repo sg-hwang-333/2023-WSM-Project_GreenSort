@@ -50,7 +50,7 @@ const setCalendar = (year, month) => {
     for (let date=1; date <= lastDateDay; date++) {
         let dateItemDiv = document.createElement("div");  // <div></div>
         dateItemDiv.classList.add("date");                // <div class='date'></div>
-        dateItemDiv.classList.add("item");                // <div class='date item'></div>
+        dateItemDiv.classList.add("Witem");                // <div class='date item'></div>
         dateItemDiv.innerHTML = date;                     // <div class='date item'>date</div>
         // HTML에 .dates.container 자식으로 넣자
         datesContainerDiv.appendChild(dateItemDiv);
@@ -63,14 +63,14 @@ const setCalendar = (year, month) => {
     firstDateDiv.style.gridColumnStart = firstDateDay + 1;
 
     // 토: 파랑
-    let saturdayDivs = datesContainerDiv.querySelectorAll(`.date.item:nth-child(7n+${7-firstDateDay})`);
+    let saturdayDivs = datesContainerDiv.querySelectorAll(`.date.Witem:nth-child(7n+${7-firstDateDay})`);
     for (let dateItem of saturdayDivs) {
-        dateItem.style.color="blue";
+        dateItem.style.color="var(--bs-blue)";
     // 일: 빨강
     }
-    let sundayDivs = datesContainerDiv.querySelectorAll(`.date.item:nth-child(7n+${(7-firstDateDay +1) % 7})`);
+    let sundayDivs = datesContainerDiv.querySelectorAll(`.date.Witem:nth-child(7n+${(7-firstDateDay +1) % 7})`);
     for (let dateItem of sundayDivs) {
-        dateItem.style.color="red";
+        dateItem.style.color="var(--bs-red)";
     }
 
 }
@@ -100,10 +100,3 @@ rightDiv.onclick = () => {
     }
     setCalendar(year, month);
 };
-// leftDiv.addEventListener("click", () => console.log(`${month}월`));
-
-// const thisMonthDiv = document.getElementsByClassName("month")[0];
-// thisMonthDiv.onclick = () => {
-//     now = new Date();
-//     setCalendar(now.getFullYear(), now.getMonth() + 1);
-// }
