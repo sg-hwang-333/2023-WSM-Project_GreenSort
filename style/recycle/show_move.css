@@ -21,6 +21,13 @@
     font-size: 20px;
     font-weight: var(--bs-font-medium);
 }
+.scroll-img {
+    margin-top: 12vh;
+}
+
+.text-space {
+    margin-bottom: 12vh;
+}
 
 .button-81 {
     margin-top: 100px;
@@ -45,14 +52,11 @@
     touch-action: manipulation;
 }
 
-.arrow-img {
-    margin-top: 20px;
-    margin-bottom: 20px; 
-}
 .arrow-img-2 {
-    margin-top: 20px;
-    margin-bottom: -80px;
+    margin-top: 15vh;
+    margin-bottom: -180px;
 }
+
 
 .button-81:hover {
     background-color: var(--bs-mainColor);
@@ -82,7 +86,6 @@
 .img-resize {
     width: 50vw;
 }
-
 @media screen and (max-width: 1024px) {
     .fertilizer {
         margin-left: 200px;
