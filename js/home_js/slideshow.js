@@ -33,7 +33,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// 2초마다 자동으로 슬라이드 넘기기
+// 자동으로 슬라이드 넘기기
 setInterval(function () {
     plusSlides(1);
 }, 5000);
