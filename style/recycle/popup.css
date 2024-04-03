@@ -3,6 +3,7 @@
     background-color: antiquewhite;
     border-radius: 30px;
     padding: 10px 15px;
+    cursor: pointer;
 }
 .pop_wrap {
     position: fixed;

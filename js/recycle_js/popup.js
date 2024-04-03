@@ -1,22 +1,23 @@
-var target = document.querySelectorAll('.btn_open');
-var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
-var targetID;
+import json from '../../json/popup.json';
 
-// 팝업 열기
-//for(var i = 0; i < target.length; i++){
-//  target[i].addEventListener('click', function(){
-//    targetID = this.getAttribute('href');
-//    document.querySelector(targetID).style.display = 'block';
-//  });
-//}
+let target = document.querySelectorAll('.btn_open');
+let popCloseBtn = document.querySelectorAll('.pop_wrap .btn_close');
+let targetID;
+
 
 function openPopup(elememt) {
   console.log(elememt.id)
+
+  switch (elememt.id) {
+    case 'origin-name': targetID = json.food[0];
+  }
+
+  document.querySelector(targetID).style.display = 'block';
 }
 
 // 팝업 닫기
-for(var j = 0; j < target.length; j++){
-  btnPopClose[j].addEventListener('click', function(){
+for(let j = 0; j < target.length; j++){
+  popCloseBtn[j].addEventListener('click', function(){
     this.parentNode.parentNode.style.display = 'none';
   });
 }
