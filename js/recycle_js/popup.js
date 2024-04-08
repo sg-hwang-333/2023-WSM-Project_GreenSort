@@ -1,18 +1,14 @@
+let json = popup;
+
 let target = document.querySelectorAll('.btn_open');
 let popCloseBtn = document.querySelectorAll('.pop_wrap .btn_close');
 let popInfo = document.querySelector('#pop_info');
 let targetID;
 
-fetch('../../json/popup.js')
-.then(function(response) {
-return response.json();
-})
-.then(function(myJson) {
-console.log(JSON.stringify(myJson));
-});
 
 function openPopup(elememt) {
   console.log(elememt.id)
+  console.log(json.food);
 
   switch (elememt.id) {
     case 'origin-name': targetID = json.food[0]; break;
