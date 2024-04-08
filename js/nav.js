@@ -1,7 +1,7 @@
 const img = document.getElementById("hamburger");
 const navbar = document.querySelector(".navbar-container");
 
-let isNavbarVisible = true; // 초기에 navbar는 보이도록 설정
+let isNavbarVisible = true;
 
 img.addEventListener("click", function() {
 

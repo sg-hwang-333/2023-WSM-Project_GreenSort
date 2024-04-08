@@ -30,8 +30,8 @@ const trashData = {
 function getRadioGroup(event) {
     let value = event.target.value;
 
-    let originImgDiv = document.getElementById('origin-img');
-    let originNameDiv = document.getElementById('origin-name');
+    let originImgDiv = document.getElementById('trash-img');
+    let originNameDiv = document.getElementById('trash-name');
     let trashcanImgDiv = document.getElementById('trash-can');
 
     const trashInfo = trashData[value];
