@@ -98,12 +98,9 @@
     width: 50vw;
 }
 @media screen and (max-width: 1024px) {
-    .select-btn-group {
-        
-    }
-    /* .selBtn2 {
+    .selBtn2 {
         margin-left: 200px;
-    } */
+    }
     .img-resize {
         width: 70%;
     }
@@ -113,9 +110,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* .selBtn2 {
+    .selBtn2 {
         margin-left: 90px;
-    } */
+    }
     .img-resize {
         width: 80%;
     }.arrow-img-2 {
