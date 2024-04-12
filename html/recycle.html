@@ -122,13 +122,13 @@
             </div>
             <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
                 <div class="select-btn-group scroll-img">
-                    <button class="select-btn feed button-81" role="button" onclick="toggleContainers('feed')">사료화</button>
-                    <button class="select-btn fertilizer button-81" role="button" onclick="toggleContainers('fertilizer')">비료화</button>
+                    <button class="select-btn selBtn1" id="selBtn1" role="button" onclick="toggleContainers('sel1')">사료화</button>
+                    <button class="select-btn selBtn2" id="selBtn2" role="button" onclick="toggleContainers('sel2')">비료화</button>
                 </div>
             </div>
             
             <!-- select 이후 -->
-            <div class="feed-container hide">
+            <div class="sel1-container hide">
                  
                 <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
                     <div class="scroll-text "><div onclick="openPopup(this)" id="step1-1" class="btn_open">살균·건조 처리</div></div>
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="fertilizer-container hide">
+            <div class="sel2-container hide">
                  
                 <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500" data-aos-once="false">
                     <div class="scroll-text "><div onclick="openPopup(this)" id="step2-1" class="btn_open">석회 안정화</div></div>

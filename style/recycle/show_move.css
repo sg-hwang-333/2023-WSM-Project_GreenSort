@@ -35,8 +35,13 @@
     height: 436px;
 }
 
-.button-81 {
-    margin-top: 100px;
+.select-btn-group {
+    display: inline;
+    align-content: space-between;
+}
+
+.select-btn {
+    margin-top: 180px;
     margin-bottom: 20vh;
     background-color: var(--bs-white);
     border: 0 solid var(--bs-mainColor);
@@ -64,12 +69,12 @@
 }
 
 
-.button-81:hover {
+.select-btn:hover {
     background-color: var(--bs-mainColor);
     color: var(--bs-white);
 }
 
-.fertilizer {
+.selBtn2 {
     margin-left: 400px;
 }
 .no-check-btn {
@@ -93,9 +98,12 @@
     width: 50vw;
 }
 @media screen and (max-width: 1024px) {
-    .fertilizer {
-        margin-left: 200px;
+    .select-btn-group {
+        
     }
+    /* .selBtn2 {
+        margin-left: 200px;
+    } */
     .img-resize {
         width: 70%;
     }
@@ -105,9 +113,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .fertilizer {
+    /* .selBtn2 {
         margin-left: 90px;
-    }
+    } */
     .img-resize {
         width: 80%;
     }.arrow-img-2 {
